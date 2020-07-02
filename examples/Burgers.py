@@ -45,7 +45,7 @@ def main():
     )
     
     #NN structure
-    net = dde.maps.FNN([2] + [20] * 4 + [1], "tanh", "Glorot normal")
+    net = dde.maps.FNN([2] + [20] * 3 + [1], "tanh", "Glorot normal")
     #train the model
     model = dde.Model(data, net)
 
